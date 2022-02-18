@@ -62,6 +62,7 @@ function testDecorator(target:any, key:string){
 }
 
 //Decorator factory -> essentially a decorator that returns a function
+//Used when we worry about passing in custom arguements
 function logError(errorMessage:string){
   //Normal function that returns our decorator
   return function(target: any, key:string, desc: PropertyDescriptor): void{

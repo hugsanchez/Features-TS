@@ -1,0 +1,23 @@
+{
+  "name": "features",
+  "version": "1.0.0",
+  "description": "Why do we care about Types?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugsanchez/Features-TS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hugsanchez/Features-TS/issues"
+  },
+  "homepage": "https://github.com/hugsanchez/Features-TS#readme",
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
+  }
+}
