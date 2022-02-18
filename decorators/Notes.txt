@@ -1,0 +1,33 @@
+DECORATORS WHEN APPLICABLE TO A PROPERTY, METHOD, ACCESSOR
+AKA CLASS STUFF
+
+-First arguement is the prototype of the object
+-Second arguement is the key of the property/method/accessor on the object
+-Third arguement is the property descriptor ( more on this in a second )
+-Decorators are applied when the code for this class is ran ( not when an instance is created )
+  That decorator only gets executed one single time and that is when we first define
+  our class
+  We define class at one point via JS and thus executes decorator
+  It doesn't happen when we create an instance
+
+
+
+PROPERTY DESCRIPTOR FOR METHODS
+Has these options
+- writable (boolean) describes whether or not this property can be changed
+- enumerable (boolean) describes whether or not this property can get looped over by a 'for...in'
+- value describes the current value
+- configurable flag that describes property definition can be changed and property can be deleted
+
+
+Configured writable property to false so that it CAN NEVER be updated 
+-Saying is this writable (able to overide) false its not
+- This is the key way to modify properties in our descriptor
+
+target[key] = () => {}
+
+** One of the pieces of functionality that he updated
+ essentially after our decorator gets called TS internally is going to try and apply
+ a property descriptor back to the prototype
+ cant just override methods in a prototype gotta use property descriptor
+  
